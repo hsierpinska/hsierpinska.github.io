@@ -18,6 +18,10 @@ header a {
     text-decoration: none;
 }
 
+#c {
+  line-height: 27px;
+}
+
 .layouts {
   display: flex;
   height: 500px;
