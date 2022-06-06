@@ -1,0 +1,199 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    
+    transition: font-size 0.5s, height 0.5s;
+    -webkit-transition: font-size 0.5s, height 0.5s;
+    -moz-transition: font-size 0.5s, height 0.5s;
+
+}
+
+#header img {
+
+  height: 100px;
+   transition: font-size 0.5s, height 0.5s;
+    -webkit-transition: font-size 0.5s, height 0.5s;
+    -moz-transition: font-size 0.5s, height 0.5s;
+
+}
+#header.small {
+  font-size: 15px;
+  height: 30px;
+}
+
+#header.small img {
+  height: 80px;
+}
+
+
+#menu
+{
+  height: 50px;
+  justify-content: center;
+  display:flex;
+  padding: 10px;
+
+}
+
+#menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(243, 177, 177);
+  text-decoration: none;
+  color: black;
+  border: 3px solid white;
+  border-radius: 50px;
+  text-align: center;
+}
+#menu a:hover {
+    background-color: #555;
+    transition: 0.3s;
+    color: white;
+}
+
+#ph1 img {
+  width: 100%;
+}
+
+.fading {
+  animation: fadeEffect 3s; 
+}
+
+@keyframes fadeEffect { 
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+  main {
+      background-color: #dea482;
+      width: 100%;
+      height: 600px;
+      padding: 30px;
+  }
+
+.box1 {
+
+  padding: 50px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 15pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#onas img {
+  border-radius: 5%;
+}
+
+h2 {
+  font-size: 40pt;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 24%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  transition: 0.3s;
+  border-radius: 5%;
+}
+.column img:hover {
+  opacity: 0.7;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+@-webkit-keyframes zoom-out {
+  from {transform:scale(1)}
+  to {transform:scale(0)}
+}
+@keyframes zoom-out {
+  from {transform:scale(1)}
+  to {transform:scale(0)}
+}
+
+
+#lightbox {
+  
+  position: fixed; z-index: 999;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+ 
+  
+  background: rgba(0, 0, 0, 0.5);
+ 
+  
+  display: flex;
+  align-items: center;
+  align-items: center;
+ 
+  
+  visibility: hidden;
+  opacity: 0;
+ 
+  
+  transition: opacity ease 0.4s;
+}
+ 
+
+#lightbox.show {
+  visibility: visible;
+  opacity: 1;
+}
+ 
+
+#lightbox img {
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+}
+ 
+.mapouter{position:relative;text-align:right;height:400px;width:800px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:800px;}
