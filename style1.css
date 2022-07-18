@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("file:///montserrat.ttf");
+}
+
+@font-face {
+  font-family: "Raleway Thin";
+  src: url("file:///raleway-thin.ttf");
+}
+
+
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("file:///raleway-regular.ttf");
+}
+
+
 body {
     margin: 0;
     background-color: rgb(63, 63, 63);
@@ -5,6 +22,8 @@ body {
     font-family: 'Raleway Thin', 'Arial Narrow', Arial, sans-serif;
     
   }
+
+
 #header {
     display: flex;
     justify-content:space-between;
