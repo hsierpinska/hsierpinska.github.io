@@ -5,26 +5,73 @@ body {
     font-family: 'Raleway Thin', 'Arial Narrow', Arial, sans-serif;
     
   }
-header {
+#header {
     display: flex;
     justify-content:space-between;
     align-items:center;
-    height: 200px;
-
+    height: 150px;
+    transition: .3s;
 }
 
-header a {
-    color: white;
+#footer {
+    background-color: rgb(71, 71, 71);
+    height: 80px;
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: auto;
+    
+}
+
+#sticky {
+  position: fixed;
+  background-color: rgb(71, 71, 71);
+  z-index: 99;
+  top: 0;
+  height: 150px;
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  transition: .3s;
+}
+
+#sticky.small {
+  height: 100px;
+  transition: .3s;
+}
+.button a {
+  color: black;
+}
+
+#a a {
+  color: #fff;
+}
+#header a {
     text-decoration: none;
 }
 
 #c {
+  transition: .3s;
   line-height: 27px;
+  margin-top: 150px;
+  margin-right: 60px;
+  margin-bottom: 200px;
+}
+
+#c img {
+  width: 500px;
+  float: left;
+  margin-bottom: 30px;
 }
 
 .layouts {
   display: flex;
   height: 500px;
+  margin-bottom: 30px;
   justify-content: center;
 }
 .layouts img { 
@@ -55,7 +102,7 @@ border-radius: 20px;}
       font-family: 'Raleway Regular', 'Arial Narrow', Arial, sans-serif;
       
   }
-
+ 
   section, article {
     font-family: 'Montserrat Light', 'Arial Narrow', Arial, sans-serif;
     margin-left: 30px;
@@ -63,14 +110,18 @@ border-radius: 20px;}
     letter-spacing: 3px;
   }
   article {
+    margin-top: 80px;
     text-align: center;
   }
+
+
   
   .img-grid {
+
     --gap: 0px;
     --num-cols: 4;
     --row-height: 400px;
-  
+    
     box-sizing: border-box;
     padding: var(--gap);
   
@@ -128,9 +179,14 @@ border-radius: 20px;}
 
   /* mobile */
   @media screen and (max-width: 1024px) {
+    .overlay :not(img){
+      font-size: 20px;
+      line-height: 60px;
+    }
     .img-grid {
       --num-cols: 2;
       --row-height: 200px;
+      margin-top: 5%;
     }
   }
 
