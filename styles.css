@@ -1,0 +1,147 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("https://cdn.neowin.com/news/images/uploaded/2023/06/1686292349_windows_xp_bliss_wallpaper_4k.jpg");
+    background-size: cover;
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: lowercase;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+
+.terminal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+}
+
+li a {
+    color: #00ff00;
+    text-decoration: none;
+}
+.window-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.icon.red {
+    background-color: #ff605c;
+}
+
+.icon.yellow {
+    background-color: #ffbd44;
+}
+
+.icon.green {
+    background-color: #00ca4e;
+}
+
+.terminal-title {
+    margin-left: 20px;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+h1, h2, p {
+    
+    text-transform: lowercase;
+    color: #00ff00;
+}
+
+p {
+    font-size: 17px;
+}
+#typed-text, #typed-subtext {
+    margin-top: -15px;
+    display: inline-block;
+    border-right: 2px solid #00ff00;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+
+
+#typed-subtext {
+    margin-top: -25px;
+}
+
+.skills ul {
+    list-style-type: none;
+    font-size: 18px;
+    padding-left: 0;
+}
+
+ul ul {
+    padding-left: 20px !important; 
+  }
+
+.skills ul li {
+    margin: 10px 0;
+}
+
+.contact p {
+    color: #00ff00;
+}
+
+#terminal2 {
+    top: 550px; 
+}
+
+.terminal-window {
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 2px solid #1e1e1e;
+    position: absolute; 
+}
+
+.terminal-body {
+    background-color: rgba(49, 52, 58, 0.7); 
+    backdrop-filter: blur(15px); 
+    padding: 20px;
+    height: 500px;
+    font-size: 16px;
+}
+
+.terminal-body-2 {
+    background-color: rgba(49, 52, 58, 0.7); 
+    backdrop-filter: blur(15px); 
+    padding: 20px;
+    height: 200px;
+    font-size: 16px;
+    
+}
+
+#terminal {
+    top: 150px; 
+    left: 400px; 
+}
+
+
+#terminal2 {
+    top: 500px; 
+    right: -1000px; 
+    transition: right 1s ease; 
+}
+
